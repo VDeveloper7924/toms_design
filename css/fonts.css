@@ -1,0 +1,15 @@
+@font-face {
+    font-family:"GothamCondensed-Black";
+    src:url("../fonts/GothamCond-Black.woff2") format("woff2"),url("../fonts/GothamCond-Black.woff") format("woff"),url("../fonts/GothamCond-Black.otf") format("opentype");
+    font-style:normal;font-weight:400;
+}
+@font-face {
+    font-family:"DK Plakkaat";
+    src:url("../fonts/DK Plakkaat.woff2") format("woff2"),url("../fonts/DK Plakkaat.woff") format("woff"),url("../fonts/DK Plakkaat.otf") format("opentype");
+    font-style:normal;font-weight:400;
+}
+@font-face {
+    font-family:"Gotham-Black";
+    src:url("../fonts/Gotham-Black.woff2") format("woff2"),url("../fonts/Gotham-Black.woff") format("woff"),url("../fonts/Gotham-Black.otf") format("opentype");
+    font-style:normal;font-weight:400;
+}
