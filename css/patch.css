@@ -35,7 +35,7 @@
 .patches__items--two .patches__items--image::after {
     content: url(../images/patches/small_steps.png);
     top: -75%;
-    right: 3%;
+    right: -60%;
 }
 
 .patches__items--three .patches__items--image::after {
@@ -74,8 +74,8 @@
 
 .patches__items--two div.patches__items--text::after {
     content: url(../images/patches/not_tested.png);
-    top: -339%;
-    left: 20%;
+    top: -240%;
+    left: 45%;
 }
 .patches__text {
     position: relative;
@@ -86,14 +86,14 @@
 }
 .patches__text::before {
     top: 69%;
-    left: 20%;
+    left: 15%;
 }
 .patches__text::after {
     right: -1%;
 }
 .patches__text--small::before {
     content: url(../images/patches/profites.png);
-    top: 69%;
+    top: -263%;
     left: -1%;
 }
 
@@ -118,10 +118,11 @@
 .patches__text-wrap::before, .patches__text-wrap::after {
     content: url(../images/patches/lift.png);
     position: absolute;
-    top: 0px;
+    top: -20%;
+    transform: rotate(100deg);
 }
 .patches__text-wrap::before {
-    left:20%;
+    left:25%;
     zoom: 0.4;
 }
 .patches__text-wrap::after {
@@ -131,8 +132,9 @@
 
 .patches__items--three::before, .patches__items--three::after {
     position: absolute;
-    bottom: -10%;
+    left: 47%;
     z-index: 100;
+    bottom: -17%;
 }
 
 .patches__items--three::before {
@@ -154,7 +156,7 @@
 }
 #patches-top::before {
     content: url(../images/patches/not_just_talk.png);
-    top: -146%;
+    top: -180%;
 }
 #patches-top::after {
     content: url(../images/patches/small_steps.png);
