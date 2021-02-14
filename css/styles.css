@@ -143,9 +143,12 @@
     .banner-big-text {
         padding-left: 6%;
     }
+    .banner-stamp {
+        left: 140px;
+    }
 }
 
-.greentopbottom, .tube-box img, #footer-top img {
+.greentopbottom, #footer-top img {
     width: 100%;
 }
 .greentopbottom-flip-horizontally {
@@ -159,7 +162,7 @@
     position: absolute;
     color: #161B40;
     font-weight: 900;
-    line-height: 80%;
+    line-height: 70%;
     text-transform: uppercase;
     font-size: 800px;
     font-size: 80rem;
@@ -209,7 +212,11 @@ section.no_part {
     transition: all 0.6s;
 }
 
+.white-text {
+    padding-bottom: 100px;
+    
 
+}
 @media screen and (max-width: 992px) {
     .no-background::before {
         font-size: 600px;
@@ -217,6 +224,9 @@ section.no_part {
     }
     .no-background img {
         zoom: 0.6;
+    }
+    .tube-box img {
+        width: 100%;
     }
 }
 @media screen and (max-width: 576px) {
@@ -258,6 +268,7 @@ section.no_part {
     display: flex;
     align-items: center;
 }
+
 #patches-top {
     background-color: white;
 }
@@ -282,7 +293,7 @@ section.no_part {
 #toms-section4{
     background-color: #008780;
     padding-top: 100px !important;
-    padding-bottom: 100px !important;
+    padding-bottom: 150px !important;
 }
 .section4-title {
     color: #EFF0F3;
@@ -365,7 +376,7 @@ section.no_part {
     background-repeat: no-repeat,
         no-repeat,no-repeat,
         no-repeat;
-    background-position: top -2% right,
+    background-position: top right,
     top 32% right, bottom 28% right,
     bottom 2% right;
     /* background-size: 20%; */
@@ -482,5 +493,9 @@ section.patches {
     }
     #section7-bg > div:nth-child(1) {
         margin-top: 30px;
+    }
+    #toms-section6 {
+        background-color: #008780;
+        background-image: unset;
     }
 }

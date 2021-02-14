@@ -16,11 +16,15 @@
 
 .patches__items--one .patches__items--image::before {
     content: url(../images/patches/do_good.png);
-    top: -350px;
+    top: -100%;
+    left: 6%;
 }
 
 .patches__items--two .patches__items--image::before {
     content: url(../images/patches/lift.png);
+    left: -8%;
+    top: -92%;
+    transform: rotate(70deg);
 }
 
 .patches__items--three .patches__items--image::before {
@@ -41,7 +45,7 @@
 .patches__items--three .patches__items--image::after {
     content: url(../images/patches/fresh.png);
     top: -42%;
-    right: 7%;
+    right: 12%;
 }
 
 .patches__items .patches__items--text::before{
@@ -55,26 +59,33 @@
 .patches__items--one .patches__items--text::before {
     content: url(../images/patches/vegan.png);
 }
-
+.patches__items--two .patches__items--text::before {
+    content: url(../images/patches/rea.png);
+    top: -331%;
+    left: 80%;
+}
 .patches__items--three .patches__items--text::before {
     content: url(../images/patches/happy.png);
 }
 
 .patches__items--one .patches__items--text::after {
     content: url(../images/patches/lift.png);
-    right: 0%;
-    zoom: 0.5;
+    right: -17%;
+    zoom: 1;
 }
 
 .patches__items--three .patches__items--text::after {
     content: url(../images/patches/lift.png);
     top: -230%;
-    right: 9%;
+    right: 20%;
+    transform: rotateY(
+        180deg
+        );
 }
 
 .patches__items--two div.patches__items--text::after {
     content: url(../images/patches/not_tested.png);
-    top: -240%;
+    top: -150%;
     left: 45%;
 }
 .patches__text {
@@ -99,9 +110,8 @@
 
 .patches__text--small::after {
     content: url(../images/patches/free_alumin.png);
-    top: -3%;
-    
-    right: 13%;
+    top: -450%;
+    right: 22%;
 }
 .patches__text--big::before {
     content: url(../images/patches/gluten_free.png);
@@ -114,25 +124,30 @@
 .patches__text--big {
     margin-bottom: 200px;
 }
-
-.patches__text-wrap::before, .patches__text-wrap::after {
+.patches__text-wrap::before{
+    content: url(../images/patches/lift.png);
+    position: absolute;
+    top: -25%;
+    transform: rotate(100deg);
+}
+ .patches__text-wrap::after {
     content: url(../images/patches/lift.png);
     position: absolute;
     top: -20%;
     transform: rotate(100deg);
 }
 .patches__text-wrap::before {
-    left:25%;
+    left:20%;
     zoom: 0.4;
 }
 .patches__text-wrap::after {
-    right: 2%;
-    zoom: 0.5;
+    right: -2%;
+    zoom: 0.8;
+    transform: rotate(-115deg);
 }
 
 .patches__items--three::before, .patches__items--three::after {
-    position: absolute;
-    left: 47%;
+    position: absolute;  
     z-index: 100;
     bottom: -17%;
 }
@@ -144,7 +159,8 @@
 
 .patches__items--three::after {
     content: url(../images/patches/the_first.png);
-    right: 20%;
+    bottom: -30%;
+    right: 25%;
 }
 #patches-top {
     position: relative;
@@ -156,11 +172,11 @@
 }
 #patches-top::before {
     content: url(../images/patches/not_just_talk.png);
-    top: -180%;
+    top: -135%;
 }
 #patches-top::after {
     content: url(../images/patches/small_steps.png);
-    top: 100%;
+    top: 130%;
 }
 .patches-bottom {
     position: relative;
@@ -172,11 +188,16 @@
 }
 .patches-bottom::before {
     content: url(../images/patches/free_alumin.png);
-    left: 30%;
+    left: 14%;
+    zoom: 2;
 }
 .patches-bottom::after {
     content: url(../images/patches/lift.png);
+    top: 48%;
     right: 30%;
+    transform: rotate(
+        152deg
+        );
 }
 #toms-section4 {
     position: relative;
@@ -188,13 +209,16 @@
 }
 #toms-section4::before {
     content: url(../images/patches/lift.png);
-    left: -7%;
-    bottom: -5%;
+    left: -6%;
+    bottom: -7%;
+    transform: rotate( 
+        -90deg
+         );
 }
 #toms-section4::after {
     content: url(../images/patches/not_just_talk.png);
     right: 0%;
-    bottom: -20%;
+    bottom: -13%;
 }
 @media screen and (max-width: 576px){
     section.patches *::before, section.patches *::after {
@@ -220,7 +244,21 @@ section.patches *::before, section.patches *::after {
     z-index: 100;
 }
 
-section.patches *:hover::before, section.patches *:hover::after{
+section.patches *:hover::before{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+    
+
+    -webkit-transition: all 1s ease; /* Safari and Chrome */
+    -moz-transition: all 1s ease; /* Firefox */
+    -ms-transition: all 1s ease; /* IE 9 */
+    -o-transition: all 1s ease; /* Opera */
+    transition: all 1s ease;
+}
+
+section.patches *:hover::after{
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
     -o-transform: scale(1.1);
