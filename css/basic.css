@@ -36,6 +36,10 @@
     font-size: 14px;
     font-size: 1.4rem;
 }
+.lh-9{
+    line-height: 95px;
+    line-height: 9.5rem;
+}
 @media screen and (max-width: 992px) {
     .font-800 {
         font-size: 600px;
@@ -63,6 +67,10 @@
     }
     img {
         zoom: 0.8;
+    }
+    .lh-9{
+        line-height: 85px;
+        line-height: 8.5rem;
     }
 }
 @media screen and (max-width: 768px) {
@@ -93,6 +101,10 @@
     img {
         zoom: 0.7;
     }
+    .lh-9{
+        line-height: 60px;
+        line-height: 6rem;
+    }
 }
 @media screen and (max-width: 576px) {
     .font-800 {
@@ -122,6 +134,10 @@
     img {
         zoom: 0.6;
     }
+    .lh-9{
+        line-height: 50px;
+        line-height: 5rem;
+    }
 }
 @media screen and (max-width: 375px) {
     .font-800 {
@@ -147,5 +163,9 @@
     .font-24 {
         font-size: 16px;
         font-size: 1.6rem;
+    }
+    .lh-9{
+        line-height: 55px;
+        line-height: 5rem;
     }
 }

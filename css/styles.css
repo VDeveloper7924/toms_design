@@ -1,13 +1,18 @@
 .body {
     background-color: #fff9f4;
 }
-.navbar-wrap.scrolled {
+.navbar-wrap {
     position: fixed;
-    top: 0;
+    top: -20%;
     background-color: white;
     z-index: 9999;
     transition: all 0.5s;
     box-shadow: 0px 4px 7px rgba(111,111,111,0.6);
+    transition: all 1s;
+}
+.navbar-wrap.scrolled {
+    top: 0%;
+    transition: all 2s;
 }
 .navbar-toggler {
     margin-left: -26px;
@@ -18,7 +23,7 @@
     height: 6.5em;
 }
 .nav-item img {
-    width: 120px;
+    width: 80px;
 }
 #navbarTogglerDemo02 ul {
     padding-left: 9%;
@@ -106,6 +111,9 @@
     transform: translate(0px, 0px);
     transition: all 0.5s;
 }
+.banner-big-text {
+    padding-left: 13%;
+}
 @media screen and (max-width: 576px) {
     li {
         font-size: 30px;
@@ -131,6 +139,9 @@
         zoom: 0.6;
         left: -12%;
         top: 65%;
+    }
+    .banner-big-text {
+        padding-left: 6%;
     }
 }
 
@@ -163,7 +174,7 @@ section.no_part {
     background-color: #fff9f4;
 }
 #toms-section2 {
-    background-color: #008780;
+    background : #008780 url(../images/imgpsh_fullsize_anim.png) repeat;
 }
 .section2-titletext {
     color: #161B40;
@@ -380,17 +391,17 @@ section.no_part {
 }
 #section7-bg {
     position: relative;
+}    
+
+#section7-bg > div:nth-child(1) {
+    margin-top: 130px;
 }
 #section7-bg::before {
     content: url(../images/svg/glove_white.svg);
     position: absolute;
 
 }
-@media screen and (max-width: 576px){
-    #section7-bg::before {
-        zoom: 0.5;
-    }
-}
+
 .section7-titletext {
     color: #008780;
     font-weight: 900;
@@ -399,6 +410,7 @@ section.no_part {
 
 .footer-top {
     background-color: #FFF;
+    padding-top: 150px !important;
 }
 .footer-visittext {
     font-family: Gotham-Black;
@@ -444,4 +456,31 @@ section.banner, section.no_part, section.time-machine {
 }
 section.patches {
     padding-top: 0px;
+}
+.add-point-texture {
+    position: relative;
+}
+.add-point-texture::before{
+    content : '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: transparent url(../images/imgpsh_fullsize_anim.png) repeat;
+}
+.patches.add-point-texture::before{
+    z-index: 1;
+    
+}
+
+@media screen and (max-width: 576px){
+    #section7-bg::before {
+        zoom: 0.5;
+    }
+    .footer-top {
+       
+        padding-top: 1px !important;
+    }
+    #section7-bg > div:nth-child(1) {
+        margin-top: 30px;
+    }
 }

@@ -15,13 +15,9 @@ window.onload = function()
 window.onscroll = () => {
 	const nav = document.querySelector('.navbar-wrap');
 
-	if(this.scrollY <= 10) nav.classList.remove('scrolled'); 
+	if(this.scrollY <= 20) nav.classList.remove('scrolled'); 
 	else nav.classList.add('scrolled');
-};
 
-function moveObject(event)
-{
-	
 	document.onwheel = (e) => {
 		let direction;
 		direction = e.deltaY;
@@ -34,7 +30,26 @@ function moveObject(event)
 		scrollMove(stamp, -50, 170, 50, direction ) 
 		scrollMove(rabbit, 26, 400, 80, direction ) 
 		scrollMove(everything, -35, 190, 50, direction ) 
-	}	
+	}
+
+};
+
+function moveObject(event)
+{
+	
+	// document.onwheel = (e) => {
+	// 	let direction;
+	// 	direction = e.deltaY;
+	// 	console.log(direction);
+	// 	let glove = document.querySelector(".mark-glove");
+	// 	let stamp = document.querySelector(".banner-stamp");
+	// 	let rabbit = document.querySelector(".no-rabbit img");
+	// 	let everything = document.querySelector(".everything");
+	// 	scrollMove(glove, 150, 450, 100, direction ) 
+	// 	scrollMove(stamp, -50, 170, 50, direction ) 
+	// 	scrollMove(rabbit, 26, 400, 80, direction ) 
+	// 	scrollMove(everything, -35, 190, 50, direction ) 
+	// }	
 }
 
 function scrollMove(element, start, end, moverange, direction ) {
